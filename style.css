@@ -1,0 +1,55 @@
+body {
+	background: #ffdccc;
+}
+
+
+div {
+	padding: 20px;
+	margin: 20px;
+	background: white;
+	border-radius: 8px;
+}
+
+button {
+	margin: 10px;
+	padding: 10px;
+	background: white;
+	color: orange;
+	font-weight: bolder;
+	border: solid 5px black;
+	border-radius: 4px;
+}
+
+button:hover {
+	color: black;
+}
+
+button:active {
+	background: orange;
+	color: white;
+}
+
+button:focus {
+	text-decoration: none;
+	background: blue;
+	color: white;
+}
+
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.item {
+	justify-content: center;
+	flex-grow: 1;
+	/*flex-flow: row wrap;*/
+}
+
+#html5container {
+	flex-wrap: nowrap;
+	/*flex-direction: column;*/
+}
+
