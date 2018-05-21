@@ -1,4 +1,4 @@
-import {ModelHtml} from '/app/model/web/html/ModelHtml.js';
+import {ModelHtml} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/html/ModelHtml.js';
 let ControllerHtml = function() {
 
 
