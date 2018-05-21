@@ -1,6 +1,6 @@
-import {ModelMain} from '/app/model/ModelMain.js';
-import {ModelHtml} from '/app/model/web/html/ModelHtml.js';
-import {ControllerHtml} from '/app/controller/web/html/ControllerHtml.js';
+import {ModelMain} from 'app/model/ModelMain.js';
+import {ModelHtml} from 'app/model/web/html/ModelHtml.js';
+import {ControllerHtml} from 'app/controller/web/html/ControllerHtml.js';
 
 window.onload = load;
 //------------------------------------------------------------------------------------LEVEL0
