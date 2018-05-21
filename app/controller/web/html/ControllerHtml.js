@@ -1,4 +1,4 @@
-import {ModelHtml} from 'app/model/web/html/ModelHtml.js';
+import {ModelHtml} from '/app/model/web/html/ModelHtml.js';
 let ControllerHtml = function() {
 
 
