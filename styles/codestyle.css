@@ -1,0 +1,13 @@
+code {
+	background: #003366;
+	color: white;
+
+	padding: 1px;
+	margin: 20px;
+
+	border: solid 5px black;
+	border-radius: 10px;
+
+	white-space: pre;
+	white-space: pre-wrap;
+}
