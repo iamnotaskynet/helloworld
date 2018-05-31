@@ -1,90 +1,123 @@
-let ModelHtml = function(args) {
+import {Card1} from './Card1.js';
+import {Card2} from './Card2.js';
+import {Card3} from './Card3.js';
+import {Card4} from './Card4.js';
+import {Card5} from './Card5.js';
+import {Card6} from './Card6.js';
 
-	const txt1 = `
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-	&lt;meta charset="utf-8"&gt;
-	&lt;title&gt;helloworld&lt;/title&gt;
-	&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-	&lt;h1&gt;helloworld&lt;/h1&gt;
-	&lt;h2&gt;helloworld&lt;/h2&gt;
-	&lt;h3&gt;helloworld&lt;/h3&gt;
-	&lt;h4&gt;helloworld&lt;/h4&gt;
-	&lt;h5&gt;helloworld&lt;/h5&gt;
-	&lt;h6&gt;helloworld&lt;/h6&gt;
+const ModelHtml = [
+	{
+		"tag":"div",
+		"class":"flex-container", 
+		"innerHTM": 
+		[
+			{
+				"tag":"code",
+				"class":"flex-item codeLeft", 
+				"innerHTM": Card1.left
+			},
 
-	&lt;p&gt;
-		&lt;big&gt;helloworld&lt;/big&gt;
-		&lt;small&gt;helloworld&lt;/small&gt;
-		&lt;mark&gt;helloworld &lt;/mark&gt;
-		&lt;b&gt;helloworld&lt;/b&gt;
-		&lt;i&gt;helloworld&lt;/i&gt;
-		&lt;ins&gt;helloworld&lt;/ins&gt;
-		&lt;q&gt;helloworld&lt;/q&gt;
-		helloworld
-	&lt;/p&gt;
-	&lt;blockquote>helloworld&lt;/blockquote&gt;
+			{
+				"tag":"article", 
+				"class":"flex-item aricleRight", 
+				"innerHTM": Card1.right 
+			} 
+		] 
+	},
 
-	&lt;script src="./main.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-	`;
+	{
+		"tag":"div",
+		"class":"flex-container", 
+		"innerHTM": 
+		[
+			{
+				"tag":"code",
+				"class":"flex-item codeLeft", 
+				"innerHTM": Card2.left
+			},
 
-	const txt2 = `
-<h1>helloworld</h1>
-<h2>helloworld</h2>
-<h3>helloworld</h3>
-<h4>helloworld</h4>
-<h5>helloworld</h5>
-<h6>helloworld</h6>
-<p>	
-	<big>helloworld</big>
-	<small>helloworld</small>
-	<mark>helloworld </mark>
-	<b>helloworld</b>
-	<i>helloworld</i>
-	<ins>helloworld</ins>
-	<q>helloworld</q>
-	
+			{
+				"tag":"article", 
+				"class":"flex-item aricleRight", 
+				"innerHTM": Card2.right 
+			} 
+		] 
+	},
 
-	helloworld
-</p>
-<blockquote>helloworld</blockquote>
-	`;
+	{
+		"tag":"div",
+		"class":"flex-container", 
+		"innerHTM": 
+		[
+			{
+				"tag":"code",
+				"class":"flex-item codeLeft", 
+				"innerHTM": Card3.left
+			},
 
-	const html5 = [ 
-		{"tag":"div", "class":"container", "id":"html5container", "innerHTM": "dgwrtnxcvbnmry" } 
-	];
+			{
+				"tag":"article", 
+				"class":"flex-item aricleRight", 
+				"innerHTM": Card3.right 
+			} 
+		] 
+	},
 
-	const html5left = [ 
-		{"tag":"code", "class":"item", "":"", "innerHTM": txt1 }
-	];
+	{
+		"tag":"div",
+		"class":"flex-container", 
+		"innerHTM": 
+		[
+			{
+				"tag":"code",
+				"class":"flex-item codeLeft", 
+				"innerHTM": Card4.left
+			},
 
-	const html5right = [ 
-		{"tag":"div", "class":"item", "":"", "innerHTM": txt2 } 
-	];
+			{
+				"tag":"article", 
+				"class":"flex-item aricleRight", 
+				"innerHTM": Card4.right 
+			} 
+		] 
+	},
 
-	let getElements = function(wichTotake) {
-		switch (wichTotake) {
-			case 'html5':
-				return html5;
-				break;
-			case 'html5left':
-				return html5left;
-				break;
-			case 'html5right':
-				return html5right;
-				break;
-			default:
-				return "ERROR";
-				break;
-		}
-	};
+	{
+		"tag":"div",
+		"class":"flex-container", 
+		"innerHTM": 
+		[
+			{
+				"tag":"code",
+				"class":"flex-item codeLeft", 
+				"innerHTM": Card5.left
+			},
 
-	return getElements(args);
+			{
+				"tag":"article", 
+				"class":"flex-item aricleRight", 
+				"innerHTM": Card5.right 
+			} 
+		] 
+	},
 
-}
+	{
+		"tag":"div",
+		"class":"flex-container", 
+		"innerHTM": 
+		[
+			{
+				"tag":"code",
+				"class":"flex-item codeLeft", 
+				"innerHTM": Card6.left
+			},
+
+			{
+				"tag":"article", 
+				"class":"flex-item aricleRight", 
+				"innerHTM": Card6.right 
+			} 
+		] 
+	}
+]
 export {ModelHtml};

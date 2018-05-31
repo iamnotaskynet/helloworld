@@ -1,16 +1,38 @@
-import {ModelMain} from 'https://iamnotaskynet.github.io/helloworld/app/model/ModelMain.js';
-import {ModelHtml} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/html/ModelHtml.js';
-import {ControllerHtml} from 'https://iamnotaskynet.github.io/helloworld/app/controller/web/html/ControllerHtml.js';
+import {JsonToHtml} from '/app/JsonToHtml.js';
+
+import {ModelMain} from '/app/model/ModelMain.js';
+
+//-----------------------------------------------------------------------For WEB button
+import {ControllerHtml} from '/app/controller/web/html/ControllerHtml.js';
+import {ControllerCss} from '/app/controller/web/css/ControllerCss.js';
+//----------------------------------------------------------------------For Server button
+import {ControllerPhp} from '/app/controller/server/php/ControllerPhp.js';
+
 
 window.onload = load;
 //------------------------------------------------------------------------------------LEVEL0
 function load() {
-	document.innerHTML = getElementsFromJson(ModelMain('body'));
-	document.body.innerHTML = getElementsFromJson(ModelMain('basic'));
-	document.getElementById('level0').innerHTML = getElementsFromJson(ModelMain('tech'));
+	let headAndBody = '<html lang="en">' + writeHead() + JsonToHtml(ModelMain.body) + '</html>';
+	document.write(headAndBody);
+
 	level0EventsButtonClick();
 };
 
+//--------------------------------------HEAD TAG WRITE
+function writeHead() {
+	let headElement =`
+<head>
+	<meta charset="utf-8">
+	<title>helloworld</title>
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./styles/codestyle.css">
+	
+	<script src="app/controller/ControllerMain.js" type="module" defer />
+	<script type="text/javascript"> </script>
+</head>
+	`;
+	return headElement;
+};
 
 //-----------------------------------------------------------------------------------LEVEL1
 function writeLevel1(stack) {
@@ -20,73 +42,59 @@ function writeLevel1(stack) {
 	switch (stack) {
 		case 'btn-web': 
 			//console.log('in case of switch');
-			return document.getElementById('level1').innerHTML = getElementsFromJson(ModelMain('web'));
+			return document.getElementById('level1').innerHTML = JsonToHtml(ModelMain.webArr);
 			break;
 		case 'btn-android': 
-			return document.getElementById('level1').innerHTML = getElementsFromJson(ModelMain('android'));
+			return document.getElementById('level1').innerHTML = JsonToHtml(ModelMain.androidArr);
 			break;
 		case 'btn-server':
-			return document.getElementById('level1').innerHTML = getElementsFromJson(ModelMain('server'));
+			return document.getElementById('level1').innerHTML = JsonToHtml(ModelMain.serverArr);
+			break;
+		case 'btn-common':
+			return document.getElementById('level1').innerHTML = JsonToHtml(ModelMain.commonArr);
 			break;
 		case 'btn-db':
-			return document.getElementById('level1').innerHTML = getElementsFromJson(ModelMain('db'));
+			return document.getElementById('level1').innerHTML = JsonToHtml(ModelMain.dbArr);
 			break;
 		case 'btn-linux':
-			return document.getElementById('level1').innerHTML = getElementsFromJson(ModelMain('linux'));
+			return document.getElementById('level1').innerHTML = JsonToHtml(ModelMain.linuxArr);
 			break;
 		case 'btn-networks':
-			return document.getElementById('level1').innerHTML = getElementsFromJson(ModelMain('network'));
+			return document.getElementById('level1').innerHTML = JsonToHtml(ModelMain.networksArr);
 			break;
 		case 'btn-virt':
-			return document.getElementById('level1').innerHTML = getElementsFromJson(ModelMain('virt'));
+			return document.getElementById('level1').innerHTML = JsonToHtml(ModelMain.virtArr);
 			break;
 		default:
 			return document.getElementById('level1').innerHTML = "<h1>HTTP 404 Server is DOWN</h1>";
 			break;
 	}
-
 };
 //-----------------------------------------------------------------------------------LEVEL2
-
 function writeLevel2(section) {
 	document.getElementById('level2').innerHTML = ""; // Will be here while content of page is pure
-	if (section == "btn-html5") ControllerHtml();  
+	if (section == "btn-html5") ControllerHtml();
+	else if (section == "btn-css3") ControllerCss();
+	else if (section == "btn-php") ControllerPhp();
 	else return document.getElementById('level2').innerHTML = "<h1>HTTP 404 Server is DOWN</h1>"
 };
 
-//-------------------------------------------------------------------------Parsing JSON to HTML
-
-function getElementsFromJson(arr){
-	let str = "";
-	for (let i = 0; i < arr.length; i++) { 
-		str += getElementFromJson(arr[i]);
-	}
-	return str;
-};
-
-function getElementFromJson(data) {
-	let element;
-	if (typeof data.id != "undefined" )
-		element = `<${data.tag} class="${data.class}" id="${data.id}">${data.innerHTM}</${data.tag}>`;
-	else element = `<${data.tag} class="${data.class}">${data.innerHTM}</${data.tag}>`;
-	return element;
-};
-
-//--------------------------------------------------Events
-
+//-----------------------------------------------------------------------------Events
 function level0EventsButtonClick() {
 	let listOfButtons = level0.getElementsByTagName("button");
 
 	for(let iter = 0; iter < listOfButtons.length; iter++){
 		let buttonId = listOfButtons.item(iter).id		
 		document.getElementById(buttonId).addEventListener("click", function( event ) {
+				//writing buttons on level1
 				writeLevel1( buttonId); 
 				//console.log( buttonId);
-				document.getElementById('level2').innerHTML = ""
+				document.getElementById('level2').innerHTML = "";
+				//add events to buttons at level1 
+				//after clicling buttons on level0
 				level1EventsButtonClick();
 		}, false);
-	};
-	
+	};	
 }
 
 function level1EventsButtonClick() {
@@ -96,10 +104,8 @@ function level1EventsButtonClick() {
 	for(let iter = 0; iter < listOfButtons.length; iter++){
 		let buttonId = listOfButtons.item(iter).id		
 		document.getElementById(buttonId).addEventListener("click", function( event ) {
-				writeLevel2(buttonId); 
-				//console.log( buttonId);
+				//writing level2 content
+				writeLevel2(buttonId);
 		}, false);
 	};
-
 }
-

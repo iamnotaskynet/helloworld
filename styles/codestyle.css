@@ -1,13 +1,23 @@
-code {
-	background: #003366;
+ .codeLeft {
+	background: #104928;
 	color: white;
 
 	padding: 1px;
-	margin: 20px;
+	margin: 10px;
 
 	border: solid 5px black;
 	border-radius: 10px;
 
 	white-space: pre;
 	white-space: pre-wrap;
+}
+
+.aricleRight {
+	background: white;
+
+	padding: 1px;
+	margin: 10px;
+
+	border: solid 5px orange;
+	border-radius: 10px;
 }

@@ -3,12 +3,12 @@ body {
 }
 
 
-div {
-	padding: 20px;
-	margin: 20px;
+/*div {
+	padding: 5px;
+	margin: 5px;
 	background: white;
 	border-radius: 8px;
-}
+}*/
 
 button {
 	margin: 10px;
@@ -36,20 +36,15 @@ button:focus {
 }
 
 
-.container {
+.flex-container {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
 }
 
-.item {
+.flex-item {
 	justify-content: center;
 	flex-grow: 1;
 	/*flex-flow: row wrap;*/
-}
-
-#html5container {
-	flex-wrap: nowrap;
-	/*flex-direction: column;*/
 }
 
