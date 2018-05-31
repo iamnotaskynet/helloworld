@@ -28,7 +28,7 @@ const Card1 = {
 //xmp against &lt; &gt;
 //----------------------------------right side
 	"right":`
-	<img src="/app/model/web/html/helloworld.png" alt="Helloworld image.">
+	<img src="https://iamnotaskynet.github.io/helloworld/app/model/web/html/helloworld.png" alt="Helloworld image.">
 	<hr>
 	<h1>h1 helloworld</h1>
 	<h2>h2 helloworld</h2>

@@ -1,6 +1,6 @@
-import {Card1} from './Card1.js';
-import {Card2} from './Card2.js';
-import {Card3} from './Card3.js';
+import {Card1} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/css/Card1.js';
+import {Card2} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/css/Card2.js';
+import {Card3} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/css/Card3.js';
 
 const ModelCss = [
 	{

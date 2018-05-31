@@ -1,12 +1,12 @@
-import {JsonToHtml} from '/app/JsonToHtml.js';
+import {JsonToHtml} from 'https://iamnotaskynet.github.io/helloworld/app/JsonToHtml.js';
 
-import {ModelMain} from '/app/model/ModelMain.js';
+import {ModelMain} from 'https://iamnotaskynet.github.io/helloworld/app/model/ModelMain.js';
 
 //-----------------------------------------------------------------------For WEB button
-import {ControllerHtml} from '/app/controller/web/html/ControllerHtml.js';
-import {ControllerCss} from '/app/controller/web/css/ControllerCss.js';
+import {ControllerHtml} from 'https://iamnotaskynet.github.io/helloworld/app/controller/web/html/ControllerHtml.js';
+import {ControllerCss} from 'https://iamnotaskynet.github.io/helloworld/app/controller/web/css/ControllerCss.js';
 //----------------------------------------------------------------------For Server button
-import {ControllerPhp} from '/app/controller/server/php/ControllerPhp.js';
+import {ControllerPhp} from 'https://iamnotaskynet.github.io/helloworld/app/controller/server/php/ControllerPhp.js';
 
 
 window.onload = load;

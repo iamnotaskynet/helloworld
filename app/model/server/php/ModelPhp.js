@@ -1,4 +1,4 @@
-import {Card1} from './Card1.js';
+import {Card1} from 'https://iamnotaskynet.github.io/helloworld/app/model/server/php/Card1.js';
 
 const ModelPhp = [
 	{

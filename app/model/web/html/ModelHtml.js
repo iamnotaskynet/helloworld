@@ -1,9 +1,9 @@
-import {Card1} from './Card1.js';
-import {Card2} from './Card2.js';
-import {Card3} from './Card3.js';
-import {Card4} from './Card4.js';
-import {Card5} from './Card5.js';
-import {Card6} from './Card6.js';
+import {Card1} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/html/Card1.js';
+import {Card2} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/html/Card2.js';
+import {Card3} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/html/Card3.js';
+import {Card4} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/html/Card4.js';
+import {Card5} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/html/Card5.js';
+import {Card6} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/html/Card6.js';
 
 const ModelHtml = [
 	{

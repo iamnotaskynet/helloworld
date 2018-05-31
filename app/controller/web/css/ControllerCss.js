@@ -1,5 +1,5 @@
-import {JsonToHtml} from '/app/JsonToHtml.js';
-import {ModelCss} from '/app/model/web/css/ModelCss.js';
+import {JsonToHtml} from 'https://iamnotaskynet.github.io/helloworld/app/JsonToHtml.js';
+import {ModelCss} from 'https://iamnotaskynet.github.io/helloworld/app/model/web/css/ModelCss.js';
 let ControllerCss = function() {
 
 	// let divContainer = JsonToHtml(ModelCss('css3'));
