@@ -1,5 +1,5 @@
-import {JsonToHtml} from 'https://iamnotaskynet.github.io/helloworld/app/JsonToHtml.js';
-import {ModelPhp} from 'https://iamnotaskynet.github.io/helloworld/app/model/server/php/ModelPhp.js';
+import {JsonToHtml} from '/helloworld/app/JsonToHtml.js';
+import {ModelPhp} from '/helloworld/app/model/web/php/ModelPhp.js';
 let ControllerPhp = function() {
 
 

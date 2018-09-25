@@ -35,7 +35,8 @@ const ModelMain = {
 	[	
 		{"tag":"button", "class":"flex-item", "id":"btn-html5", "innerHTM":"HTML5"}, //getString()
 		{"tag":"button", "class":"flex-item", "id":"btn-css3", "innerHTM":"CSS3"},
-		{"tag":"button", "class":"flex-item", "id":"btn-es6", "innerHTM":"ES6"}
+		{"tag":"button", "class":"flex-item", "id":"btn-es6", "innerHTM":"ES6"},
+		{"tag":"button", "class":"flex-item", "id":"btn-php7", "innerHTM":"PHP7"}
 		
 	],
 
@@ -50,7 +51,6 @@ const ModelMain = {
 	"serverArr" :
 	[
 		{"tag":"button", "class":"flex-item", "id":"btn-node-js", "innerHTM":"NodeJS"},
-		{"tag":"button", "class":"flex-item", "id":"btn-php", "innerHTM":"PHP"},
 		{"tag":"button", "class":"flex-item", "id":"btn-python", "innerHTM":"Python Django"},
 		{"tag":"button", "class":"flex-item", "id":"btn-java", "innerHTM":"Java Spring Hibernate"},
 		{"tag":"button", "class":"flex-item", "id":"btn-csharp", "innerHTM":"Csharp dotnet core"},
@@ -62,6 +62,7 @@ const ModelMain = {
 		{"tag":"button", "class":"flex-item", "id":"btn-python", "innerHTM":"Python"},
 		{"tag":"button", "class":"flex-item", "id":"btn-java", "innerHTM":"Java"},
 		{"tag":"button", "class":"flex-item", "id":"btn-csharp", "innerHTM":"Csharp"},
+		{"tag":"button", "class":"flex-item", "id":"btn-rust", "innerHTM":"Rust"},
 		{"tag":"button", "class":"flex-item", "id":"btn-cpp", "innerHTM":"Cpp"},
 		{"tag":"button", "class":"flex-item", "id":"btn-c", "innerHTM":"C"}
 	],

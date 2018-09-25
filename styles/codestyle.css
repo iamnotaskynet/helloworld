@@ -1,6 +1,6 @@
  .codeLeft {
-	background: #104928;
-	color: white;
+	background: #282923;
+	color: #65D3E3;
 
 	padding: 1px;
 	margin: 10px;
@@ -13,11 +13,12 @@
 }
 
 .aricleRight {
-	background: white;
+	background: #42433E;
 
 	padding: 1px;
 	margin: 10px;
 
-	border: solid 5px orange;
+	border: solid 5px black;
 	border-radius: 10px;
 }
+

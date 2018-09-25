@@ -1,7 +1,6 @@
 body {
-	background: #ffdccc;
+	background: #222225;
 }
-
 
 /*div {
 	padding: 5px;
@@ -11,28 +10,39 @@ body {
 }*/
 
 button {
+	background: #2e3334;
+	color: #414d47;
+
 	margin: 10px;
 	padding: 10px;
-	background: white;
-	color: orange;
+	
 	font-weight: bolder;
-	border: solid 5px black;
+
+	border: solid 5px #414d47;
 	border-radius: 4px;
 }
 
 button:hover {
-	color: black;
+	background: #1A1D1D;
+	color: #656E6F;
+
+	border: solid 5px #1A1D1D; /* #656E6F;*/
+	border-radius: 1px;
 }
 
-button:active {
+/*button:active {
 	background: orange;
 	color: white;
-}
+}*/
 
 button:focus {
 	text-decoration: none;
-	background: blue;
-	color: white;
+	background: black;
+	color: #BDE7E5;
+	text-shadow: 2px 2px 8px #3D2E6C;
+
+	border: solid 5px #3D2E6C;
+	border-radius: 1px;
 }
 
 
@@ -48,3 +58,23 @@ button:focus {
 	/*flex-flow: row wrap;*/
 }
 
+
+/*@media screen and (max-width: 600px) {*/
+@media only screen and (max-device-width: 600px) {
+
+    body {
+        background: lightblue;
+    }
+
+    button {
+    	font-size: 40px;
+    }
+
+    .codeLeft {
+        font-size: 30px;
+    }
+
+    .aricleRight {
+    	font-size: 30px;
+    }
+}

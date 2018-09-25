@@ -11,6 +11,8 @@ const Card2 = {
 	<mark>mark helloworld </mark>	<br>
 	<ins datetime="">ins helloworld</ins>	<br>
 	<del datetime="">del helloworld</del>	<br>
+	<u>u helloworld</u>	<br>
+	<s>s helloworld</s>	<br>
 
 	<cite>cite helloworld</cite> <br>
 	<q>q helloworld</q>	<br>
@@ -36,6 +38,8 @@ const Card2 = {
 	<mark>mark helloworld </mark>	<br>
 	<ins datetime="">ins helloworld</ins>	<br>
 	<del datetime="">del helloworld</del>	<br>
+	<u>u helloworld</u>	<br>
+	<s>s helloworld</s>	<br>
 
 	<cite>cite helloworld</cite> <br>
 	<q>q helloworld</q>	<br>
