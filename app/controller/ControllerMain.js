@@ -3,12 +3,12 @@ import {JsonToHtml} from '/helloworld/app/JsonToHtml.js';
 import {ModelMain} from '/helloworld/app/model/ModelMain.js';
 
 //-----------------------------------------------------------------------For WEB button
-import {ControllerHtml} from '/app/controller/web/html/ControllerHtml.js';
-import {ControllerCss} from '/app/controller/web/css/ControllerCss.js';
-import {ControllerJs} from '/app/controller/web/js/ControllerJs.js';
-import {ControllerPhp} from '/app/controller/web/php/ControllerPhp.js';
+import {ControllerHtml} from '/helloworld/app/controller/web/html/ControllerHtml.js';
+import {ControllerCss} from '/helloworld/app/controller/web/css/ControllerCss.js';
+import {ControllerJs} from '/helloworld/app/controller/web/js/ControllerJs.js';
+import {ControllerPhp} from '/helloworld/app/controller/web/php/ControllerPhp.js';
 //----------------------------------------------------------------------For COMMON button
-import {ControllerPython} from '/app/controller/common/python/ControllerPython.js';
+import {ControllerPython} from '/helloworld/app/controller/common/python/ControllerPython.js';
 
 
 window.onload = load;
