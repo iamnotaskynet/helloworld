@@ -1,3 +1,7 @@
+const Card1 = {
+//--------------------------------left side
+	"left":`
+<xmp>
 x = "Hello world Python"
 print(x)
 # ------------------------------
@@ -11,37 +15,7 @@ print(type( (1,2,3) ))
 print(type( {} ))
 print(type( {1,2,3} ))
 print(type(["b", 42, 3.14]))
-
-class ClassName:
-	pass
-
-obj = ClassName()
-
-def function_name():
-	pass
-
-def generator_name():
-	yield 1
-gen = generator_name()
-
-print(type(ClassName))
-print(type(obj))
-print(type(function_name))
-print(type(gen))
 # ------------------------------
-# a, b = 2, 5 
-# print(a, b)
-# tmp = a
-# a = b
-# b = tmp
-# print(a, b)
-# b = a + b
-# a = b - a 
-# b = b - a 
-# print(a, b)
-# a, b = b, a 
-# print(a, b)
-#--------------------------------
 print("\nArifmetics priority:")
 print("Exponent \t **")
 print("Unar minus \t -")
@@ -177,79 +151,12 @@ print(Arr)
 Arr.pop()
 print("Array length after pop: %s" % len(Arr))
 print(Arr)
-
-#-----Classes and their objects----------------------
-"""
-
-__init__()
-__reper__()
-"""
-
-#-----IO work with files--------------------------------
-"""
-open()
-read()
-write()
-close()
-
-__enter__()
-__exit__()
-
-with open("text.txt", "w") as textfile:
-	pass
-"""
-#---native--functions-----------------------------------
-
-"""
-print()
-
-type()
-
-bin()
-str()
-int()
-float()
-bool()
-
-len()
-
-lower()
-upper()
-isalpha()
-reverse()
-
-len()
-
-list()
-append()
-pop()
-index()
-insert()
-join()
-remove() # del arr['key'] del(some)
-sort()
-filter(lambda x: x == condition, inArrayOrString)
-
-enumerate()
-zip()
-
-min()
-max()
-abs()
-
-input()
-raw_input()
-
-
-dir()
-
-math.sqrt()
-"""
-
-#--popular--librarys------------------------------------
-
-"""
-import datetime
-import math 
-import random
-"""
+</xmp>
+	`,
+//xmp against &lt; &gt;
+//----------------------------------right side
+	"right":`
+	<img src='/app/model/common/python/terminalRecord.gif'>
+	`
+}
+export {Card1};

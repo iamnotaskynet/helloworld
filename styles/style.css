@@ -1,7 +1,10 @@
 body {
-	background: #222225;
+	/* background: #222225; */
+	background-color: #252629;
 }
-
+#level0 {
+	background-color: #1D1D1F;
+}
 /*div {
 	padding: 5px;
 	margin: 5px;
@@ -9,42 +12,56 @@ body {
 	border-radius: 8px;
 }*/
 
-button {
+.btn-lvl-0 {
+	padding: 10px;
+	background-color: inherit;
+	color: #525A5B;
+	border-width: 0;
+}
+.btn-lvl-0:hover {
+	color: #CACACA;
+}
+
+.btn-lvl-0:focus {
+	color: #FFFFFF;
+}
+
+.slashes {
+	padding: 10px;
+	color: #525A5B;
+	font-weight: 900;
+}
+
+.btn-lvl-1 {
 	background: #2e3334;
 	color: #414d47;
 
-	margin: 10px;
-	padding: 10px;
+	margin: 5px;
+	padding: 5px;
 	
 	font-weight: bolder;
 
-	border: solid 5px #414d47;
-	border-radius: 4px;
+	border: solid 1px #414d47;
+	border-radius: 2px;
 }
 
-button:hover {
+.btn-lvl-1:hover {
 	background: #1A1D1D;
 	color: #656E6F;
 
-	border: solid 5px #1A1D1D; /* #656E6F;*/
+	border: solid 1px #1A1D1D; /* #656E6F;*/
 	border-radius: 1px;
 }
 
-/*button:active {
-	background: orange;
-	color: white;
-}*/
-
-button:focus {
+.btn-lvl-1:focus {
 	text-decoration: none;
 	background: black;
 	color: #BDE7E5;
 	text-shadow: 2px 2px 8px #3D2E6C;
 
-	border: solid 5px #3D2E6C;
+	border: solid 1px #3D2E6C;
 	border-radius: 1px;
 }
-
 
 .flex-container {
 	display: flex;

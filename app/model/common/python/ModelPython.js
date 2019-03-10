@@ -1,6 +1,6 @@
-import {Card1} from '/app/model/web/php/Card1.js';
+import {Card1} from '/app/model/common/python/Card1.js';
 
-const ModelPhp = [
+const ModelPython = [
 	{
 		"tag":"div",
 		"class":"flex-container", 
@@ -21,4 +21,4 @@ const ModelPhp = [
 	
 ]
 
-export {ModelPhp};
+export {ModelPython};

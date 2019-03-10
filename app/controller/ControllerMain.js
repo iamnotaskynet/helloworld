@@ -1,14 +1,14 @@
-import {JsonToHtml} from '/helloworld/app/JsonToHtml.js';
+import {JsonToHtml} from '/app/JsonToHtml.js';
 
-import {ModelMain} from '/helloworld/app/model/ModelMain.js';
+import {ModelMain} from '/app/model/ModelMain.js';
 
 //-----------------------------------------------------------------------For WEB button
-import {ControllerHtml} from '/helloworld/app/controller/web/html/ControllerHtml.js';
-import {ControllerCss} from '/helloworld/app/controller/web/css/ControllerCss.js';
-import {ControllerJs} from '/helloworld/app/controller/web/js/ControllerJs.js';
-import {ControllerPhp} from '/helloworld/app/controller/web/php/ControllerPhp.js';
-//----------------------------------------------------------------------For Server button
-
+import {ControllerHtml} from '/app/controller/web/html/ControllerHtml.js';
+import {ControllerCss} from '/app/controller/web/css/ControllerCss.js';
+import {ControllerJs} from '/app/controller/web/js/ControllerJs.js';
+import {ControllerPhp} from '/app/controller/web/php/ControllerPhp.js';
+//----------------------------------------------------------------------For COMMON button
+import {ControllerPython} from '/app/controller/common/python/ControllerPython.js';
 
 
 window.onload = load;
@@ -80,6 +80,7 @@ function writeLevel2(section) {
 	else if (section == "btn-css3") ControllerCss();
 	else if (section == "btn-es6") ControllerJs();
 	else if (section == "btn-php7") ControllerPhp();
+	else if (section == "btn-python") ControllerPython();
 	else return document.getElementById('level2').innerHTML = "<h1>HTTP 404 Server is DOWN</h1>"
 };
 

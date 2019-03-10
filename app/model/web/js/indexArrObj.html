@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+	document.write("arrays");
+	document.body.setAttribute("id", "body");
+	document.body.innerHTML = "";
+	(function () {
+    if (!console) {
+        console = {};
+    }
+    var old = console.log;
+    var logger = document.getElementById('body');
+    console.log = function (message) {
+        if (typeof message == 'object') {
+            logger.innerHTML += 
+            	(JSON && JSON.stringify ? JSON.stringify(message) : String(message)) 
+            	+ '<br>';
+        } else {
+            logger.innerHTML += message + '<br />';
+        }
+    }
+
+})();
+</script>
+<script type="text/javascript">
+	//array initializing
+	let myArray = ["thing0","thing1","thing2","thing3","thing4","thing5","thing6"];
+	console.log(myArray);
+	// push()
+	console.log(myArray.push("thing8"));
+	console.log(myArray);
+	console.log(myArray.pop());
+	console.log(myArray);
+	console.log(myArray.shift());
+	console.log(myArray);
+	console.log(myArray.unshift("thing8"));
+	console.log(myArray);
+	 
+</script>
+<script type="text/javascript">
+	//objects
+	var object1 = {
+		name: "object1",
+		number: 42,
+		"!#@$%": "<-wierd"
+	}
+	console.log(object1.hasOwnProperty("!#@$%"));
+	console.log(object1["!#@$%"]);
+	console.log(object1.hasOwnProperty("Not exist"));
+
+</script>
+<script type="text/javascript">
+	console.log(Math.random());;
+	console.log(Math.floor(Math.random() * 20));
+	console.log(parseInt("42"));
+	console.log(parseInt("11"));
+	console.log(parseInt("11", 2));
+	console.log(parseInt("11", 8));
+	console.log(parseInt("11", 10));
+	console.log(parseInt("11", 16));
+
+</script>
+
+//Object.freeze

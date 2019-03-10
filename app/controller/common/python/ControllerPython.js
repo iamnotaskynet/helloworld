@@ -1,6 +1,6 @@
 import {JsonToHtml} from '/app/JsonToHtml.js';
-import {ModelJs} from '/app/model/web/js/ModelJs.js';
-let ControllerJs = function() {
+import {ModelPython} from '/app/model/common/python/ModelPython.js';
+let ControllerPython = function() {
 
 
 	// function getElementsFromJson(arr){
@@ -22,7 +22,7 @@ let ControllerJs = function() {
 	// 	document.getElementById('level2').innerHTML = divLeftItem + divRightItem;
 	// }
 
-	return document.getElementById('level2').innerHTML = JsonToHtml(ModelJs);
+	return document.getElementById('level2').innerHTML = JsonToHtml(ModelPython);
 
 }
-export {ControllerJs};
+export {ControllerPython};
