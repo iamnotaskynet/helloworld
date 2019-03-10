@@ -1,5 +1,5 @@
-import {JsonToHtml} from '/app/JsonToHtml.js';
-import {ModelJs} from '/app/model/web/js/ModelJs.js';
+import {JsonToHtml} from '/helloworld/app/JsonToHtml.js';
+import {ModelJs} from '/helloworld/app/model/web/js/ModelJs.js';
 let ControllerJs = function() {
 
 

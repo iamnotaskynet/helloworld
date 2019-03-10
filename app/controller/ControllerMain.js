@@ -1,6 +1,6 @@
-import {JsonToHtml} from '/app/JsonToHtml.js';
+import {JsonToHtml} from '/helloworld/app/JsonToHtml.js';
 
-import {ModelMain} from '/app/model/ModelMain.js';
+import {ModelMain} from '/helloworld/app/model/ModelMain.js';
 
 //-----------------------------------------------------------------------For WEB button
 import {ControllerHtml} from '/app/controller/web/html/ControllerHtml.js';

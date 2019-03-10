@@ -1,5 +1,5 @@
-import {JsonToHtml} from '/app/JsonToHtml.js';
-import {ModelPhp} from '/app/model/web/php/ModelPhp.js';
+import {JsonToHtml} from '/helloworld/app/JsonToHtml.js';
+import {ModelPhp} from '/helloworld/app/model/web/php/ModelPhp.js';
 let ControllerPhp = function() {
 
 

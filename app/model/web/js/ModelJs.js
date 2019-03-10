@@ -1,4 +1,4 @@
-import {Card1} from '/app/model/web/js/Card1.js';
+import {Card1} from '/helloworld/app/model/web/js/Card1.js';
 
 const ModelJs = [
 	{

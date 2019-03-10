@@ -1,4 +1,4 @@
-import {Card1} from '/app/model/common/python/Card1.js';
+import {Card1} from '/helloworld/app/model/common/python/Card1.js';
 
 const ModelPython = [
 	{
